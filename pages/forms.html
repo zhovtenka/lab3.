@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Форма</h1>
+    
+    <form action="/submit-form" method="post">
+        <label for="name">Ваше ім'я:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="age">Ваш вік:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="gender">Вибір статі:</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Інше</option>
+        </select><br><br>
+        
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="city">Виберіть місто:</label><br>
+        <select id="city" name="city">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+            <option value="kharkiv">Харків</option>
+        </select><br><br>
+        
+        <label for="message">Ваше повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Підтвердити і надіслати">
+    </form>
+</body>
+</html>
